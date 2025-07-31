@@ -1,0 +1,370 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ارتفاع الشاشة بالكامل */
+}
+body{
+    background-image: url(../public/Photos/blob-scene-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     color: #fff !important;
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+}
+.nav{
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  font-size: 25px;
+  display: flex;
+ 
+}
+.navBrand:hover{
+    background: -webkit-linear-gradient(#f77719,#0064e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+@media (max-width: 416px) {
+  .btn-add {
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .nav-items {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-items {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+}
+.nav-items .nav-link{
+    margin-left: 60px;
+}
+.custom-dropdown .dropdown-menu {
+  background-color: #101f3f;   
+}
+.custom-dropdown .dropdown-toggle::after{
+    color: white;
+}
+
+button.navbar-toggler{
+    border: 2px solid #121e3b;   
+}
+span.navbar-toggler-icon{
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+}
+.navbar-collapse {
+  text-align: left !important;
+}
+.custom-navlink{
+    color: white !important;
+    transition: color 0.2s ease-in-out !important;
+}
+.nav .nav-items span:hover,
+.nav .nav-items i:hover{
+    color: #7795c6 ;
+}
+.containerr header{
+    text-align: center;
+    margin-top: 50px ;
+}
+.mainsec{
+    border: 1px solid #101f3f;
+    border-radius: 10px;
+    min-height: 500px;
+    background-color: #0f172b;
+    margin: 30px auto;
+    box-shadow: 0 0 50px 3px #000000;
+}
+.adding{
+    text-align: center;
+    padding-top: 20px;
+}
+.adding input{
+    background-color:#0d1528 ;
+    border: 1px solid #121e3b;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    color: white;
+}
+
+.btn-add{
+    color: white;
+    height: 40px;
+    width: 70px;
+    border: 1px solid #121e3b;
+    border-radius: 10px;
+    background:linear-gradient(135deg,#00adf5,#0064e5) ;
+}
+.filters{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.filters button{
+    width: 90px;
+    height: 30px;
+    margin-left: 20px;
+    background-color: #0d1528;
+    border: 1px solid #121e3b;
+    border-radius: 10px;
+    color: #7b98cc;
+}
+.filters button:hover{
+    color: #f5bf3e;
+    background:linear-gradient(#0d1528) ;
+}
+.filters button.active{
+    color:#f5bf3e ;
+}
+
+.cardd{
+    background-color: #10172c ;
+    border: 1px solid #121e3b ;
+    border-radius: 20px ;
+    min-height: 220px ;
+    margin: 15px ;
+    padding-left: 10px ;
+    transition: all 0.2s ease-in-out;
+  
+}
+.cardd h2{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.cardd p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0;
+    color:#7795c6 ;
+}
+.cardd:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 3px #121e3b;
+
+    
+}
+
+.cardd button , .viewsec button{
+    margin-top: 20px;
+    color: white;
+    height: 40px;
+    width: 70px;
+    border: 1px solid #121e3b;
+    border-radius: 10px;
+    background:linear-gradient(135deg,#00adf5,#0064e5) ;
+}
+
+.custom-radio{
+    display: flex;
+    align-items: center;
+}
+.custom-radio h2{
+    padding-left: 5px;
+}
+.custom-radio input[type="checkbox"]{
+  opacity: 0;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  z-index: 2;
+  cursor: pointer;
+}
+.custom-radio .checkmark {
+  height: 25px;
+  width: 25px;
+  background-color: #10182b;
+  border-radius: 50%;
+  border: 2px solid #00bee8 ;
+  color: transparent; 
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.custom-radio input[type="checkbox"]:checked + .checkmark {
+    color: #0c296b;
+    background:linear-gradient(135deg,#00adf5,#0064e5) ;  
+}
+
+
+
+/* editt taskk */
+.editsec , .innerviewsec{
+    border: 1px solid #101f3f;
+    border-radius: 10px;
+    min-height: 500px;
+    background-color: #0f172b;
+    box-shadow: 0 0 50px 3px #000000;
+    margin-bottom: 20px;
+}
+
+.editTask h1 , .viewsec h1{
+    text-align: center;
+    letter-spacing: 5px;
+}
+.editsec form{
+    margin-top:100px;
+}
+
+.editsec input{
+    background-color:#0d1528 ;
+    border: 1px solid #121e3b;
+    border-radius: 5px;
+    height: 40px;
+    color: white !important;
+    margin-top: 10px;
+}
+.editTask h2{
+    text-align: center;
+}
+ .editName,.description{
+    margin: 40px 30px;
+}
+.change-div{
+    display: flex;
+    justify-content: center;
+}
+.change-btn{
+    margin-top: 20px !important;
+    color: white;
+    height: 40px;
+    border: 1px solid #121e3b;
+    border-radius: 10px;
+    background:linear-gradient(135deg,#00adf5,#0064e5) ;
+}
+.editsec button:hover{
+    background:linear-gradient(-135deg,#f77719,#0064e5) ;
+}
+.viewsec .content{
+    display: grid;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.content .values{
+    font-size: 30px;
+}
+.content label{
+    font-size: 30px;
+    margin-top: 30px;
+}
+/* loginnn */
+.header3 , .sign{
+    text-align: center;
+}
+.mainlogin{
+    margin-top: 100px;
+    min-height: 70vh;
+}
+.form-control:focus{
+    background-color: #0d1528 !important;
+}
+.mainsec3{
+    border: 1px solid #101f3f !important;
+    border-radius: 10px !important;
+    background-color: #0f172b !important;
+    box-shadow: 0 0 50px 3px #000000 !important;
+    
+}
+.mainsec3 input{
+    background-color:#0d1528 ;
+    border: 1px solid #121e3b !important;
+    border-radius: 5px;
+}
+.mainsec3 button{
+    margin-top: 20px;
+    border: 1px solid #121e3b;
+    border-radius: 10px;
+    background:linear-gradient(135deg,#00adf5,#0064e5) ;
+}
+.mainsec3 button:hover{
+    background:linear-gradient(-135deg,#f77719,#0064e5) ;
+}
+
+.mainsec3 p{
+    font-size: 15px;
+    color: #7795c6 !important;
+}
+.mainsec3 p a{
+    color: #00adf5 !important;
+}
+/* signUPPP */
+.signsection{
+    margin-top: 70px;
+    min-height: 72vh;
+}
+.sectionSign{
+    border: 1px solid #101f3f;
+    border-radius: 10px;
+    height: 400px;
+    background-color: #0f172b;
+    box-shadow: 0 0 50px 3px #000000;
+    margin-bottom: 10px !important;
+}
+.sectionSign input{
+    display: block;
+    background-color:#0d1528 ;
+    border: 1px solid #121e3b;
+    border-radius: 5px;
+    height: 40px;
+    color: white !important;
+}
+.sectionSign button{
+    display: block;
+    margin-top: 20px;
+    color: white;
+    height: 40px;
+    width: 250px;
+    border: 1px solid #121e3b;
+    border-radius: 10px;
+    background:linear-gradient(135deg,#00adf5,#0064e5) ;
+}
+.sectionSign p{
+    font-size: 15px;
+    color: #7795c6;
+    text-align: center;
+}
+.sectionSign p a{
+    color: #00adf5;
+}
+ input::placeholder{
+    padding: 6px;
+    color: #7795c6 !important;
+}
+button:hover{
+    background:linear-gradient(-135deg,#f77719,#0064e5) ;
+}
+ .buttonlogin , .buttonsign{
+    text-decoration: none !important;
+}
+footer{
+    padding: 1rem;
+    flex: 1;
+    color:#7795c6 ;
+    box-shadow: 0 -4px 20px 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+}
+footer a{
+    margin-left: 5px;
+    color: #7795c6;
+}
+footer a:hover{
+    color: #0064e5;
+}
